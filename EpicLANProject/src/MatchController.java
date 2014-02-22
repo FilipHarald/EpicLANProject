@@ -8,6 +8,10 @@ public class MatchController {
 		rankingTable = rT;
 		match = m;
 	}
+	
+	public void setMatch(Match m){
+		match = m;
+	}
 
 	public void setWinningTeam(int winningTeam) {
 		match.setWinningTeam(winningTeam);

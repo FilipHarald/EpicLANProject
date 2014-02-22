@@ -18,11 +18,31 @@ public class EpicLANProjectTEST {
 		rT.add(p3);
 		Player p4 = new Player("ctrlshift", rT.generateUserID(), 1501);
 		rT.add(p4);
+		Player p5 = new Player("1", rT.generateUserID());
+		rT.add(p5);
+		Player p6 = new Player("2", rT.generateUserID());
+		rT.add(p6);
+		Player p7 = new Player("3", rT.generateUserID());
+		rT.add(p7);
+		Player p8 = new Player("4", rT.generateUserID());
+		rT.add(p8);
+		
 		
 		Match match = new Match(rT.getPlayerList());
 		MatchController matchController = new MatchController(rT, match);
 		matchController.setWinningTeam(0);
-		rT.update();
+
+		Match match1 = new Match(rT.getPlayerList());
+		matchController.setMatch(match1);
+		matchController.setWinningTeam(1);
+		
+		Match match2 = new Match(rT.getPlayerList());
+		matchController.setMatch(match2);
+		matchController.setWinningTeam(0);
+		
+		Match match3 = new Match(rT.getPlayerList());
+		matchController.setMatch(match3);
+		matchController.setWinningTeam(1);
 		
 	
 	}
