@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class RankingTable implements Iterable {
+public class RankingTable implements Iterable<Player> {
 
     ArrayList<Player> list;
 
