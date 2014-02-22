@@ -23,6 +23,10 @@ public class Player {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+	
+	public int getUserID(){
+		return userID;
+	}
 
 	public void setRating(int rating) {
 		this.rating = rating;
