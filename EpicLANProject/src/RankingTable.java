@@ -11,8 +11,24 @@ public class RankingTable implements Iterable {
 
     public boolean add(Player player) {
         boolean result = list.add(player);
-        Collections.sort(list);
+        update();
         return result;
+    }
+
+    public void update() {
+        Collections.sort(list);
+    }
+
+    public int generateUserID() {
+        Iterator<Player> iter = iterator();
+        int id = 0;
+        while(iter.hasNext()) {
+            Player p = iter.next();
+            if (p.getUserID() > id) {
+                id = p.getUserID();
+            }
+        }
+        return id+1;
     }
 
     @Override
