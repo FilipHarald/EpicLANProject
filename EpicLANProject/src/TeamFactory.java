@@ -6,7 +6,7 @@ public class TeamFactory {
 
 	/**
 	 * 
-	 * Generates two balanced teams(not sure if this should be in this class)
+	 * Generates two balanced teams
 	 */
 
 	public static List<Team> generateTeams(List<Player> playerList,
