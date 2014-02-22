@@ -6,13 +6,9 @@ public class Match {
 
 	private List<Team> teamList;
 
-	private Result result;
+	private int winningTeam;
 
-	public enum Result {
 
-		TEAM1_WINNER, TEAM2_WINNER, TIE
-
-	}
 
 	/**
 	 * 
@@ -64,23 +60,24 @@ public class Match {
 	 * 
 	 * 
 	 * 
-	 * @return result of match
+	 * @return index (in teamList) of winning team
 	 */
 
-	public Result getResult() {
+	public int getWinningTeam() {
 
-		return result;
+		return winningTeam;
 
 	}
 
 	/**
 	 * 
-	 * Sets the result of the match
+	 * Sets the winning team of the match, by using their index in teamList
+	 * 
 	 */
 
-	public void setResult(Result result) {
+	public void setWinningTeam(int result) {
 
-		this.result = result;
+		this.winningTeam = result;
 
 	}
 

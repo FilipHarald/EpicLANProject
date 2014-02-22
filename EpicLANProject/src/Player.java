@@ -31,7 +31,12 @@ public class Player implements Comparable<Player> {
 	public void setRating(int rating) {
 		this.rating = rating;
 	}
-
+	public void increaseRating(int increase) {
+		this.rating += increase;
+	}
+	public void decreaseRating(int decrease) {
+		this.rating -= decrease;
+	}
 	public int getRating() {
 		return rating;
 	}
