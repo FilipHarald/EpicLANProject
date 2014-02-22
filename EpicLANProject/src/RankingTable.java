@@ -19,6 +19,20 @@ public class RankingTable implements Iterable<Player> {
         Collections.sort(list);
     }
 
+    public void print() {
+        Iterator<Player> iter = iterator();
+        int rank = 1;
+        while(iter.hasNext()) {
+            Player p = iter.next();
+            System.out.println("Rank: " + rank + "\tRating: " + p.getRating() + "\tID: " + Integer.toString(p.getUserID()) + "\tName: " + p.getUserName());
+            rank++;
+        }
+    }
+
+    public ArrayList<Player> getPlayerList() {
+        return list;
+    }
+
     public int generateUserID() {
         Iterator<Player> iter = iterator();
         int id = 0;
