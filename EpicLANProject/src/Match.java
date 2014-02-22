@@ -2,13 +2,9 @@ import java.util.List;
 
 public class Match {
 
-	private List<Player> playerList;
-
 	private List<Team> teamList;
 
 	private int winningTeam;
-
-
 
 	/**
 	 * 
@@ -16,14 +12,10 @@ public class Match {
 	 * 
 	 * default 2
 	 * 
-	 * 
-	 * 
 	 * @param playerList
 	 */
 
 	public Match(List<Player> playerList) {
-
-		this.playerList = playerList;
 
 		this.teamList = TeamFactory.generateTeams(playerList, 2);
 
@@ -47,8 +39,6 @@ public class Match {
 	 */
 
 	public Match(List<Player> playerList, int numberOfTeams) {
-
-		this.playerList = playerList;
 
 		this.teamList = TeamFactory.generateTeams(playerList, numberOfTeams);
 

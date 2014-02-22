@@ -10,9 +10,9 @@ public class Player implements Comparable<Player> {
 		this.userID = userID;
 	}
 
-	public Player(String userName, int userID, int rank) {
+	public Player(String userName, int userID, int rating) {
 		setUserName(userName);
-		setRating(1500);
+		setRating(rating);
 		this.userID = userID;
 	}
 

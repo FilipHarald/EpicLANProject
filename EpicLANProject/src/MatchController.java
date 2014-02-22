@@ -18,7 +18,6 @@ public class MatchController {
 		List<Team> teamList = match.getTeams();
 		int winningTeamIndex = match.getWinningTeam();
 
-
 		for (int i = 0; i < teamList.size(); i++) {
 
 			for (Player p : teamList.get(i).getPlayerList()) {
@@ -29,5 +28,6 @@ public class MatchController {
 				}
 			}
 		}
+		rankingTable.update();
 	}
 }
