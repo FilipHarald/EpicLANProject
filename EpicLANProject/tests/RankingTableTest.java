@@ -1,7 +1,11 @@
 import junit.framework.TestCase;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import LANHelper.Player;
+import LANHelper.RankingTable;
 
 public class RankingTableTest extends TestCase {
     RankingTable rt;

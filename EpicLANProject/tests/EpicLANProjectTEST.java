@@ -1,7 +1,13 @@
 import static junit.framework.TestSuite.warning;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import LANHelper.Match;
+import LANHelper.MatchController;
+import LANHelper.Player;
+import LANHelper.RankingTable;
 
 
 public class EpicLANProjectTEST {
