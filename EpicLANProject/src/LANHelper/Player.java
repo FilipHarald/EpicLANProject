@@ -5,8 +5,8 @@ public class Player implements Comparable<Player> {
 
 	private String userName;
 	private int rating;
-//	private int userID;
 	private Calendar registrationDate;
+//	private int userID;
 
 	public Player(String userName) {
 		setUserName(userName);
@@ -39,9 +39,11 @@ public class Player implements Comparable<Player> {
 	public void increaseRating(int increase) {
 		this.rating += increase;
 	}
+	
 	public void decreaseRating(int decrease) {
 		this.rating -= decrease;
 	}
+	
 	public int getRating() {
 		return rating;
 	}
@@ -50,8 +52,16 @@ public class Player implements Comparable<Player> {
 		return registrationDate;
 	}
 
-    @Override
+    
     public int compareTo(Player o) {
         return getRating() - o.getRating();
+    }
+    
+    public String toString(){
+    	return "Name: " + userName + "\tRating: " + rating;
+    }
+    
+    public String getPlayerInfo() {
+		return "Name: " + userName + "\nRating: " + rating + "\nRegistration date: " + registrationDate;
     }
 }

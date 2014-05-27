@@ -33,10 +33,20 @@ public class OperatorView extends JFrame {
 		playerListPanel = new PlayerListPanel(this, rT);
 		add(playerListPanel, BorderLayout.EAST);
 
+		pack();
+		setVisible(true);
 	}
 
 	public void setText(String s) {
 		messageArea.setText(s);
+	}
+	
+	public void appendText(String s) {
+		messageArea.append("\ns");
+	}
+	
+	public void printPlayerData(Player p){
+		
 	}
 
 }
